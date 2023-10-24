@@ -5,6 +5,16 @@
   font-family: Poppins, sans-serif;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   background: linear-gradient(
     90deg,
@@ -30,18 +40,21 @@ header {
   margin-top: 24px;
   margin-right: 42px;
   z-index: 101;
+  cursor: pointer;
 }
 
 .nav--location-logo {
   width: 30px;
   height: 29px;
   margin-right: 4px;
+  cursor: pointer;
 }
 
 .nav--location {
   color: rgb(255, 255, 255);
   font-size: 15px;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .navdiv {
@@ -99,13 +112,20 @@ ul > img {
   margin-bottom: -5px;
   width: 21px;
   height: 21px;
+  cursor: pointer;
+}
+
+.section1--hr-container {
+  margin-top: 60px;
+  position: fixed;
 }
 
 .header--horizontal-line {
+  padding: 0 0;
   border: 0;
   margin: 0;
   height: 5px;
-  width: 100%;
+  width: 140%;
   display: fixed;
   background-image: linear-gradient(
     90deg,
@@ -126,6 +146,8 @@ ul > img {
 }
 
 .section1--horizontal-line {
+  margin-top: 2000px;
+  position: fixed;
 }
 
 .section2 {
@@ -181,10 +203,19 @@ section3-title {
 .box {
   color: white;
   height: 306px;
+  cursor: pointer;
+  position: relative;
+}
+
+section3--right-arrow {
+  width: 60px;
+  margin-right: 12px;
+  align-items: center;
 }
 
 .section2--box-description,
 .section3--box-description {
+  cursor: pointer;
   background: linear-gradient(
     45deg,
     rgb(250, 174, 0) 0%,
@@ -205,7 +236,8 @@ section3-title {
 
 .section2--button-container,
 .section3--button-container,
-.section4--button {
+.section4--button,
+.section6--button {
   padding: 20px 0px;
   display: flex;
   align-items: center;
@@ -221,7 +253,8 @@ section3-title {
 
 .section2--button,
 .section3--button,
-.section4--button {
+.section4--button,
+.section6--button {
   padding: 12px 48px;
   font-size: 16px;
   border-radius: 32px;
@@ -265,6 +298,11 @@ section3-title {
   text-align: center;
 }
 
+.section3--grid-item,
+.section4--grid-item {
+  cursor: pointer;
+}
+
 .section3--img {
   width: 100%;
   border-top-left-radius: 8px;
@@ -281,6 +319,13 @@ section3-title {
   align-items: center;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.section3--right-arrow {
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
 .section3--button-container {
@@ -305,7 +350,8 @@ section3-title {
   color: rgb(7, 136, 220);
 }
 
-.section4--container {
+.section4--container,
+.section6--container {
   height: 70vh;
   background-color: green;
   text-align: left;
@@ -314,6 +360,9 @@ section3-title {
   padding-left: 60px;
   align-items: center;
   position: relative;
+}
+
+.section4--container {
   background-image: linear-gradient(
     to left,
     #4bff85,
@@ -330,7 +379,8 @@ section3-title {
     #0099ff
   );
 }
-.section4--title {
+.section4--title,
+.section6--title {
   font-size: 32px;
 }
 
@@ -339,7 +389,8 @@ section3-title {
   text-align: left;
 }
 
-.section4--button {
+.section4--button,
+.section6--button {
   color: #0a7f62;
   padding: 12px 24px;
   margin-top: 10px;
@@ -347,12 +398,18 @@ section3-title {
 
 .section4--description,
 .section4--title,
-.section4--button {
-  margin-bottom: 4px;
+.section4--button,
+.section6--title,
+.section4--description,
+.section6--title,
+.section6--description,
+.section6--button {
+  margin-bottom: 16px;
   z-index: 5;
 }
 
-.section4--img {
+.section4--img,
+.section6--img {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -363,6 +420,20 @@ section3-title {
 .section5 {
   height: 93vh;
   background-color: yellow;
+}
+
+.section6--container {
+  height: 70vh;
+  background: rgb(71, 196, 109);
+}
+
+.section6--img {
+  width: 98vh;
+  margin-right: 90px;
+}
+
+.section6--button {
+  width: 280px;
 }
 
 .section7 {
