@@ -314,7 +314,22 @@ section3-title {
   padding-left: 60px;
   align-items: center;
   position: relative;
-  background-image: linear-gradient(to left, #4bff85, #50ff7f, #55ff7a, #5aff74, #5fff6e, #3ffb8b, #1df7a3, #00f1b7, #00e1dd, #00cefb, #00b6ff, #0099ff);
+  background-image: linear-gradient(
+    to left,
+    #4bff85,
+    #50ff7f,
+    #55ff7a,
+    #5aff74,
+    #5fff6e,
+    #3ffb8b,
+    #1df7a3,
+    #00f1b7,
+    #00e1dd,
+    #00cefb,
+    #00b6ff,
+    #0099ff
+  );
+}
 .section4--title {
   font-size: 32px;
 }
@@ -343,4 +358,14 @@ section3-title {
   right: 0;
   width: 1000px;
   z-index: 4;
+}
+
+.section5 {
+  height: 93vh;
+  background-color: yellow;
+}
+
+.section7 {
+  height: 93vh;
+  background-color: yellow;
 }
