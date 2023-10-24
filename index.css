@@ -207,8 +207,8 @@ section3-title {
   position: relative;
 }
 
-section3--right-arrow {
-  width: 60px;
+.section3--right-arrow {
+  width: 40px;
   margin-right: 12px;
   align-items: center;
 }
@@ -254,7 +254,9 @@ section3--right-arrow {
 .section2--button,
 .section3--button,
 .section4--button,
-.section6--button {
+.section6--button,
+.section7--button,
+.section8--button {
   padding: 12px 48px;
   font-size: 16px;
   border-radius: 32px;
@@ -323,7 +325,6 @@ section3--right-arrow {
 
 .section3--right-arrow {
   position: absolute;
-  bottom: 2px;
   right: 10px;
   transform: translateY(-50%);
 }
@@ -418,13 +419,110 @@ section3--right-arrow {
 }
 
 .section5 {
-  height: 93vh;
-  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 105vh;
+  background-color: white;
+  padding: 70px;
+}
+
+.section5--container {
+  margin-left: 20px;
+  margin-top: -5px;
+  grid-column: 2;
+}
+
+.section5--title {
+  font-size: 32px;
+  color: #0a7f62;
+  margin-bottom: 16px;
+  margin-left: 30px;
+}
+
+.section5--list1 li {
+  margin-bottom: 10px;
+}
+
+.ul--cliqq-check {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 23px;
+  height: auto;
+}
+
+.section5--list1 li span {
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 60px);
+  font-size: 16px;
+}
+
+.section5--list2 li {
+  margin-bottom: 10px;
+}
+
+.ul--cliqq-check {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 23px;
+  height: auto;
+}
+
+.section5--list2 li span {
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 60px);
+  font-size: 16px;
+}
+
+.section5--par {
+  margin-top: -20px;
+  margin-left: 417px;
+}
+
+.deals {
+  color: rgb(7, 136, 220);
+}
+
+.section5--download {
+  color: #343434;
+  font-size: 19.2px;
+  margin-top: 60px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-left: 50px;
+}
+
+.section5--learn {
+  font-size: 16px;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+
+.learn {
+  color: rgb(7, 136, 220);
+}
+
+.section5--dl {
+  margin-left: 47px;
+}
+
+.section5--img {
+  margin-top: -550px;
+  margin-left: 55px;
+  margin-bottom: 50px;
+  max-width: 100%;
 }
 
 .section6--container {
   height: 70vh;
   background: rgb(71, 196, 109);
+  margin-top: 200px;
 }
 
 .section6--img {
@@ -436,7 +534,138 @@ section3--right-arrow {
   width: 280px;
 }
 
+.section6--button:hover {
+  opacity: 0.9;
+}
+
 .section7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   height: 93vh;
-  background-color: yellow;
+  background-color: white;
+  padding: 80px;
+}
+
+.section7--container {
+  margin-top: -130px;
+}
+
+.section7--title {
+  font-size: 32px;
+  color: #0a7f62;
+  margin-bottom: 16px;
+  margin-left: 30px;
+}
+
+.section7--list1 li {
+  margin-bottom: 10px;
+}
+
+.ul--cliqq-check {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 23px;
+  height: auto;
+}
+
+.section7--list1 li span {
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 50px);
+  font-size: 16px;
+}
+
+.section7--list2 li {
+  margin-bottom: 10px;
+}
+
+.ul--cliqq-check {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 23px;
+  height: auto;
+}
+
+.section7--list2 li span {
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 50px);
+  font-size: 16px;
+}
+
+.section7--par {
+  margin-top: -8px;
+  margin-left: 413px;
+}
+
+.big {
+  color: rgb(7, 136, 220);
+}
+
+.section7--img {
+  max-width: 85%;
+  margin-top: 10px;
+  margin-left: 75px;
+}
+
+.section7--button-container {
+  margin-top: -200px;
+  margin-left: 40px;
+}
+
+.section7--button,
+.section8--button {
+  background: linear-gradient(90deg, #47c46d 0%, #50b588 33.33%);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.section7--button:hover {
+  background: linear-gradient(90deg, #f8cb47 0%, #f4b242 33.33%);
+}
+
+.section8 {
+  background-image: url("images/main-page/section8--img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section8--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section8--left {
+  display: flex;
+  margin-right: 70px;
+}
+
+.section8-right {
+  text-align: center;
+}
+
+.section8--logo {
+  height: 217px;
+}
+
+.section8--title {
+  color: rgb(33, 37, 41);
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.section8--button {
+  margin-top: 20px;
 }
